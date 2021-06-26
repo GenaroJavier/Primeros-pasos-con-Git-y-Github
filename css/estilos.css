@@ -35,3 +35,8 @@ body {
     font-weight: normal;
     font-size: 0.8em;
 }
+
+#post img {
+    height: 100px;
+    width: 100px;
+}
