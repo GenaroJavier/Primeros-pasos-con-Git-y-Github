@@ -8,6 +8,47 @@
 
 - **Git merge (nombre de la rama)** fusiona la rama en la que estamos posicionados actualmente con la rama a la que estamos apuntando. 
 
+### Comandos adicionales para ramas
+
+```bash
+# nos muestra las ramas existentes y su historia 
+$ git show-branch 
+
+# Nos muestra lo mismo pero con un poco mas de informacin. 
+$ git show-branch --all 
+
+# Ejemplo 
+# Listado de las ramas creadas en nuestro repositorio
+! [cabecera] Agregue una imagen nueva al post
+ ! [galeria] Adición de imagenes al post
+  * [master] Eliminacion de una nota que no tenia nada que ver con este curso
+   ! [origin/cabecera] Agregue una imagen nueva al post
+    ! [origin/master] Eliminacion de una nota que no tenia nada que ver con este curso
+
+# Commits mas recientes de estas ramas
+-----
+  * + [master] Eliminacion de una nota que no tenia nada que ver con este curso
+  * + [master^] Eliminacion de una nota que no tenia nada que ver con este curso
+  * + [master~2] Creación de la carpeta notas, con el fin de guardar los apuntes que estado realizando durante mis practicas en git y github
+  * + [master~3] Adición de una nueva imagen.
+  * + [master~4] Modificacion en las estilos de las imagenes del post.
+  * + [master~5] Agregue una nueva imagen en la carpeta.
+  * + [master~6] Modifique el titulo de la pagina
+  * + [master~7] Incluimos el nombre del autor
+  - - [master~8] Fusión de mi repositorio local con github Merge branch 'master' of https://github.com/GenaroJavier/Primeros-pasos-con-Git-y-Github
+  * + [master~8^2] Initial commit
+  * + [master~9] Correción de color de fuente
+  - - [master~10] Correción de errores en el merge
+  * + [master~11] Modificacion de Titulo y color de fondo en la rama Master
++  +  [cabecera] Agregue una imagen nueva al post
++ *++ [cabecera^] Modificacion de Titulo y color de fondo
+++*++ [galeria] Adición de imagenes al post
+
+
+# Con este comando se nos abrira una interfaz grafica con la que podremos observar la historia de nuestro proyectro de una forma mas detallada.
+$ gitk 
+```
+
 ## Creación de mi repositorio remoto en Github
 
 - Para poder subir nuestro repositorio local a github necesitamos haber creado nuestra cuenta previamente. 
@@ -32,8 +73,7 @@
 
 ## Notas
 
-- **HEAD** Es el indicador de cual versión de commit estoy viendo de los archivos. 
-- **fetch** Significa traer cosas \
+- **HEAD** Es el indicador de cual versión de commit estoy viendo de los archivos.
 - **pull** Significa traer cosas
 - **push** Significa llevar cosas 
 - **delta** Es el número de cambios 
