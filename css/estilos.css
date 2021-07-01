@@ -56,4 +56,5 @@ li, a{
     color: white;
     list-style: none;
     margin: auto;
+    text-decoration: none;
 }
