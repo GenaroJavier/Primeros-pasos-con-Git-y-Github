@@ -101,4 +101,18 @@ footer{
     display: inline-block;
     top: 3px;
 }
-texto para probar push hacia rama miguel
+/*texto para probar push hacia rama miguel*/
+
+#post img:nth-child(4){
+    width: 650px;
+    height: 400px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    position: relative;
+    border-radius: 20px;
+}
+
+#post p {
+    padding-left: 10px;
+    padding-right: 10px;
+}
