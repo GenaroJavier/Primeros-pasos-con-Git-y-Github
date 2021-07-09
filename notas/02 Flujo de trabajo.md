@@ -1,12 +1,16 @@
 ## Creación de ramas
 
-- **gti branch (nombre de la rama)**  Comando que nos permite crear una rama. 
+- **git branch (nombre de la rama)**  Comando que nos permite crear una rama. 
 
-- **Git checkout (nombre de la rama)** Nos permite movernos a una rama diferente. 
+- **git checkout (nombre de la rama)** Nos permite movernos a una rama diferente. 
 
-- **Git branch** Nos permite ver las ramas creadas en nuestra carpeta.
+- **git branch** Nos permite ver las ramas creadas en nuestra carpeta.
 
-- **Git merge (nombre de la rama)** fusiona la rama en la que estamos posicionados actualmente con la rama a la que estamos apuntando. 
+- **git branch -d (nombre de la rama** Con este comando eliminamos una rama en el repositorio local. 
+
+- **git push origin --delete nombre_de_la_rama** Con este comando le decimos a nuestro repositorio remoto que hemos eliminado una rama y que queremos que se actualice. 
+
+- **git merge (nombre de la rama)** fusiona la rama en la que estamos posicionados actualmente con la rama a la que estamos apuntando. 
 
 ### Comandos adicionales para ramas
 
@@ -69,7 +73,7 @@ $ gitk
 
 - **git pull origin master --allow-unrelated-histories** Corrige el error entre ramas con el mismo nombre
 
-- **git push origin master** Envia los archivos del repositorio local al remoto. 
+- **git push origin master** Envía los archivos del repositorio local al remoto. 
 
 ## Notas
 
@@ -77,3 +81,14 @@ $ gitk
 - **pull** Significa traer cosas
 - **push** Significa llevar cosas 
 - **delta** Es el número de cambios 
+- Si al eliminar una rama nos encontramos con el siguiente error 
+  
+  ```bash
+  $ error: unable to push to unqualified destination: branch_name 
+  The destination refspec neither matches an existing ref on the remote
+   nor begins with refs/, and we are unable to guess a prefix based on 
+  the source ref. error: failed to push some refs to 
+  'git@example.com:/my_repo'
+  ```
+  
+  significa que una persona con acceso a nuestro repositorio, quizás ya haya borrado la rama en cuestión. 
