@@ -76,6 +76,8 @@ $ gitk
 
 - **git push origin master** Envía los archivos del repositorio local al remoto. 
 
+- **git remote set-url origin git@servidor.com:usuario/proyecto** Conexión con SSH.
+
 ## Notas
 
 - **HEAD** Es el indicador de cual versión de commit estoy viendo de los archivos.
