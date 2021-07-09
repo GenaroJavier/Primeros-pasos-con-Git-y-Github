@@ -11,6 +11,7 @@
 - **git push origin --delete nombre_de_la_rama** Con este comando le decimos a nuestro repositorio remoto que hemos eliminado una rama y que queremos que se actualice. 
 
 - **git merge (nombre de la rama)** fusiona la rama en la que estamos posicionados actualmente con la rama a la que estamos apuntando. 
+- **git reset --hard HEAD~1** Eliminar un commit
 
 ### Comandos adicionales para ramas
 
