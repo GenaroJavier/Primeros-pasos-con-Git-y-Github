@@ -60,7 +60,7 @@ $ gitk
 
 - Despues es necesario crear nuestro repositorio para poder obtener nuestro link http. 
 
-- **git origin add (ruta http)** nos permite especificar el origen al que vamos a mandar nuestros archivos. 
+- **git remote add (nombre del repositorio ej. origin) (ruta http)** nos permite especificar el origen al que vamos a mandar nuestros archivos. 
 
 - **git remote** nos dice cual es el origen 
 
