@@ -1,0 +1,3 @@
+Al clonar un repositorio y querer ver todas las ramas usamos el comando 
+
+git fetch --all
